@@ -1,0 +1,54 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+OrdererOrgs:
+
+  - Name: Orderer
+    Domain: workspace
+    EnableNodeOUs: true
+    Template:
+      Start: 1
+      Count: 5
+      
+
+PeerOrgs:
+  - Name: developers
+    Domain: developers.workspace
+    EnableNodeOUs: true
+    Template:
+      Start: 1
+      Count: 2
+    Users:
+      Start: 1
+      Count: 1
+
+  - Name: accounts
+    Domain: accounts.workspace
+    EnableNodeOUs: true
+    Template:
+      Start: 1
+      Count: 2
+    Users:
+      Count: 1
+  
+  - Name: hr
+    Domain: hr.workspace
+    EnableNodeOUs: true
+    Template:
+      Start: 1
+      Count: 2
+    Users:
+      Start: 1
+      Count: 1
+
+  - Name: marketing
+    Domain: marketing.workspace
+    EnableNodeOUs: true
+    Template:
+      Start: 1
+      Count: 2
+    Users:
+      Start: 1
+      Count: 1
